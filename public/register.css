@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f4f8;
+}
+
+.register-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #007bff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.register-container h2::after {
+    content: '';
+    width: 40px;
+    height: 4px;
+    background: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff; /* Green focus color */
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.15);
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.register-container p {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+}
+
+.register-container p a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.register-container p a:hover {
+    color: #0056b3;
+}
